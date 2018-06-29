@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/app.css">
+    <title>GPU Ratings</title>
+
+</head>
+<body>
+    <h2 class="container title">Rate a GPU!</h2>
+    <div class="container mt-5">
+        <div class="form-group">
+            <select  id="product-select" class="form-control custom-select">
+                <option value="0" disabled selected>Select Product</option>
+                <option value="asus">ASUS GTX 1080 ti</option>
+                <option value="msi">MSI GTX 1070 ti</option>
+                <option value="amd">AMD Radeon RX 580</option>
+                <option value="gigabyte">GIGABYTE Radeon 560</option>
+                <option value="evga">EVGA GTX 1060</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="number" id="rating-control" class="form-control" step="0.1" max="5" placeholder="Rate 1-5" disabled>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>GPUs</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="asus">
+                    <td>ASUS GTX 1080 ti</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                            </div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="msi">
+                    <td>MSI GTX 1070 ti</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                            </div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="amd">
+                    <td>AMD Radeon RX 580</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                            </div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="gigabyte">
+                    <td>GIGABYTE Radeon RX 560</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                            </div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="evga">
+                    <td>EVGA GTX 1060</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                            </div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
